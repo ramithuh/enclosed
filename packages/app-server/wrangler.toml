@@ -6,6 +6,8 @@ pages_build_output_dir = "./dist"
 [env.production.vars]
 PUBLIC_IS_SETTING_NO_EXPIRATION_ALLOWED = "true"
 PUBLIC_DEFAULT_NOTE_NO_EXPIRATION = "true"
+VITE_IS_SETTING_NO_EXPIRATION_ALLOWED = "true"
+VITE_DEFAULT_NOTE_NO_EXPIRATION = "true"
 
 # Define KV bindings for the production environment
 [[env.production.kv_namespaces]]
