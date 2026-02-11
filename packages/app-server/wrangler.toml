@@ -2,6 +2,11 @@ name = "enclosed-app"
 compatibility_date = "2024-08-20"
 pages_build_output_dir = "./dist"
 
-[[kv_namespaces]]
+[env.production.vars]
+VITE_IS_SETTING_NO_EXPIRATION_ALLOWED = "true"
+VITE_DEFAULT_NOTE_NO_EXPIRATION = "true"
+
+# Define KV bindings for the production environment
+[[env.production.kv_namespaces]]
 binding = "notes"
-id = "b1329cb8560e49d392bed877c9ac48a2"
+id = "804e6f0bf3a94068809f3cd5fb1ae5e0"
